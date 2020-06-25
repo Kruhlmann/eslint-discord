@@ -1,0 +1,21 @@
+{
+    "name": "eslint-discord",
+    "version": "1.0.0",
+    "description": "Discord bot which auto-lints ecmascript code blocks",
+    "main": "index.js",
+    "repository": "git@github.com:Kruhlmann/eslint-discord.git",
+    "author": "Andreas Stigsbøl Krühlmann <andreas@kruhlmann.dev>",
+    "license": "GPL-3.0-or-later",
+    "scripts": {
+        "lint": "eslint -c .eslintrc.typescript.json src --ext .ts"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^3.4.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-tsdoc": "^0.2.5",
+        "eslint-plugin-unicorn": "^20.1.0",
+        "gts": "^2.0.2",
+        "prettier": "^2.0.5",
+        "typescript": "^3.9.5"
+    }
+}
