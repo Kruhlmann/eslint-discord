@@ -1,3 +1,7 @@
+*.js
+*.js.map
+test-report.xml
+
 # Logs
 logs
 *.log

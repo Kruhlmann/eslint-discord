@@ -14,7 +14,7 @@
         "ecmaVersion": 2019,
         "sourceType": "module"
     },
-    "plugins": ["eslint-plugin-tsdoc", "unicorn"],
+    "plugins": ["eslint-plugin-tsdoc", "unicorn", "simple-import-sort"],
     "rules": {
         "indent": ["error", 4, { "SwitchCase": 1 }],
         "quotes": ["warn", "double"],
@@ -24,6 +24,7 @@
         "unicorn/filename-case": "off",
         "unicorn/no-reduce": "off",
         "complexity": ["error", 3],
-        "max-statements-per-line": ["error", { "max": 25 }]
+        "max-statements-per-line": ["error", { "max": 25 }],
+        "simple-import-sort/sort": "error"
     }
 }

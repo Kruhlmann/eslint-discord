@@ -7,15 +7,29 @@
     "author": "Andreas Stigsbøl Krühlmann <andreas@kruhlmann.dev>",
     "license": "GPL-3.0-or-later",
     "scripts": {
-        "lint": "eslint -c .eslintrc.typescript.json src --ext .ts"
+        "dev": "tsc -w",
+        "build": "tsc",
+        "test:unit": "jest tests --coverage",
+        "lint": "eslint -c .eslintrc.json src --ext .ts"
     },
     "dependencies": {
+        "@types/eslint": "^7.2.0",
         "@typescript-eslint/eslint-plugin": "^3.4.0",
+        "eslint": "^7.3.1",
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-tsdoc": "^0.2.5",
         "eslint-plugin-unicorn": "^20.1.0",
         "gts": "^2.0.2",
         "prettier": "^2.0.5",
         "typescript": "^3.9.5"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.3",
+        "@typescript-eslint/parser": "^3.4.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-simple-import-sort": "^5.0.3",
+        "jest": "^26.1.0",
+        "jest-sonar-reporter": "^2.0.0",
+        "ts-jest": "^26.1.1"
     }
 }
