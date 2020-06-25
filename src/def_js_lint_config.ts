@@ -1,13 +1,7 @@
-import { Linter } from "eslint";
+import { CLIEngine } from "eslint";
 
-const config: Linter.Config = {
-    extends: ["./node_modules/gts/", "plugin:unicorn/recommended"],
-    env: {
-        es6: true,
-        jasmine: true,
-        commonjs: true,
-        browser: true,
-    },
+const config: CLIEngine.Options = {
+    extensions: ["./node_modules/gts/", "plugin:unicorn/recommended"],
     parserOptions: {
         ecmaVersion: 2019,
         sourceType: "module",
